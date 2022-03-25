@@ -1,0 +1,137 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="654,1546" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="52">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="29">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="508,1481" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="466,237" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="enter keyword" Title="[string.Format(&quot;data finder{0}&quot;, Environment.NewLine)]">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="ue:ExcelValue">[Saved.Values(Of UiPath.Excel.ExcelValue)("resut")]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="466,1114" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="634ded00-f711-4f40-ab8a-917cc411ee84" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="454,893" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT q'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="412,215" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="634ded00-f711-4f40-ab8a-917cc411ee84" Text="[Saved.Values(Of UiPath.Excel.ExcelValue)(&quot;resut&quot;)]" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.daraz.com.bd/" DesignTimeRectangle="291, 147, 688, 45" ElementType="InputBox" FriendlyName="'INPUT q'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='search' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' aaname='' /&gt;" Guid="2e9482e8-a0fc-42ac-b3cf-20b97583bef6" ImageBase64="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" InformativeScreenshot="ada2d9d273a3400d75496163f2d9aad6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online Shopping in Bangladesh: Order Now from Daraz.com.bd' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'SEARCH'" sap:VirtualizedContainerService.HintSize="412,155" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="634ded00-f711-4f40-ab8a-917cc411ee84" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.daraz.com.bd/" DesignTimeRectangle="934, 147, 45, 45" ElementType="Button" FriendlyName="'SEARCH'" FullSelectorArgument="&lt;webctrl parentid='topActionHeader' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='topActionHeader' tag='BUTTON' type='' aaname='SEARCH' check:text='SEARCH' /&gt;" Guid="303a3b45-ab4c-48e4-9169-7e2b834bb9ef" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI3SURBVGhD7Zo9axRRFIb9MZZiFwtBbLSwEXubSKwUC20UISKiRIsELARjwE9EogiKCHYKEjcK0VJcIkbQRCUSUGf27k5mjnMO99VJPAiz9+pllvvCw8CcM4d9du58FLOBBiCDIZEkCQlHNjaH0SHqtm5bhaZKMKUI0lyJEiRKhAaJEqFBokRokCgRGiRKhAaJEusxVw5Q9vQ65fOzROYH5Uttyl7cpe70cbXfFcSbRP5uzo7Us9p+ph7nAuJFInt+x44jylq3yFw7JPvNpRHqPTpvK0TFyuIfx7qAOEuYC3vtqHIFXRxWe9KTW20HUe/xlNrTD4izRDZ3Xwbx2dDqoHvvjPRx0tPb1Z66IM4SRbIigzrju9V6leLbF+k1U/vVel0QJ4nqUkqOblJ7quQLr6S39+CsWq8L4iSRnthix5RL5NQ2tadK/vmt9HZvHFbrdUHcl9Pyexlkrh5U6yAd21FeOEZ6O2M71Z66IO4X9pPLMqj4vqzWwWp7Rvqy1rRa7wfEWYKvBX4yc/KPr6kzsWdNnW+v2cxNqXPS0aE1dRcQd4kSM7mP8sU3dmQps/BSHnJ4/eAUXz/Ilvd3zu1S59QF8SIhHNtMvYfjlH+at6N/h9+f+BYsUmX4zPkQQfxJVOAlxf84Pw+qDzb+4b+WngcR5J9I/A2fIsh/l2B8iSBBJBgfIkgwCQYijT0ToF8BBgku4QISJUKDRInQIFEiNEiUCA0SJYLS+C8K1n/bYbeNzgBIEP0ElARs0zBMqIIAAAAASUVORK5CYII=" InformativeScreenshot="11c6755d08cf06ce1c3c44baf75d0a82.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online Shopping in Bangladesh: Order Now from Daraz.com.bd' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Saved.Values(Of System.Data.DataTable)(&quot;Extract Table Data&quot;)]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='New column 1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='New column 2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='New column 3'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='New column 4'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column5' Name='New column 5'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column6' Name='New column 6'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column7' Name='New column 7'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='alt'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='img' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='del' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='i' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column5' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='5' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='i' idx='3' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column6' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='5' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column7' attr='text'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='5' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="412,155" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Page" MaximumResults="30" Version="V1">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.daraz.com.bd/catalog/?spm=a2a0e.home.search.2.735212f7o8tDZj&amp;q=ear%20phone&amp;_keyori=ss&amp;from=search_history&amp;sugg=ear%20phone_1_1" DesignTimeRectangle="1255, 307, 28, 28" FriendlyName="'A'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a' idx='9' isleaf='1' parentid='root' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' aaname='' isleaf='1' parentid='root' tag='A' /&gt;" Guid="880ecca6-5035-4efb-8537-198a467f205b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADKSURBVFhH7ZehCgJBEIZ9TZMY7hkuXTIpPoDB7hpkkybTJpNZDMslg7BwsPXgl5G9wyC4nnOuwnywYWbD/zFMmQES8zsC1lporaGU6vVRBmU1tAL04ZwLVX9QBmU1tAJk9y0es0RABETgXwU8zGKJYxXKN+GZwNVgNs6xPvnQiIdHgKhLbIsMxa4MjTj4BO54HOZDZJtLqF/DKOBxXuUYTQ1cHVoR8Ah0HD/BIOCxn3RbQIJnAh8gAiIgAiLwVCD5YZL8NEtFYgHgBjKXdbuY+l8DAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.daraz.com.bd%2F&amp;amp;refer_pv_id=735212f7o8tDZj' title='ear phone - Buy ear phone at Best Price in Bangladesh | www.daraz.com.bd' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="283, -4264, 1000, 4599" FriendlyName="'426185 items'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='root' tag='DIV' /&gt;" Guid="3906521a-9dd2-4586-b80d-9d930bdaa05f" InformativeScreenshot="d269148dc2b24cb82dc172699b5510f5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.daraz.com.bd%2F&amp;amp;refer_pv_id=735212f7o8tDZj' title='ear phone - Buy ear phone at Best Price in Bangladesh | www.daraz.com.bd' /&gt;" SearchSteps="Selector" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ueab:WriteRangeX Append="True" Destination="[Notes.Sheet(Saved.Values(Of UiPath.Excel.ExcelValue)(&quot;resut&quot;))]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="412,156" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[Saved.Values(Of System.Data.DataTable)(&quot;Extract Table Data&quot;)]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="dde8ea800f7d384523e699925c5f8939.png" Selector="&lt;html app='chrome.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.daraz.com.bd%2F&amp;amp;refer_pv_id=735212f7o8tDZj' title='ear phone - Buy ear phone at Best Price in Bangladesh | www.daraz.com.bd'/&gt;" Url="https://www.daraz.com.bd/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
