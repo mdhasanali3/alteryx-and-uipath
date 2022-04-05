@@ -1,0 +1,1769 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AlteryxDocument yxmdVer="2018.1">
+  <Nodes>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="390" y="870" width="108" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Target 
+
+28,064 records</Text>
+          <Font name="Microsoft Sans Serif" size="9.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="391" y="186" width="108" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Target</Text>
+          <Font name="Microsoft Sans Serif" size="7.8" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="91" y="150" width="287" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Find how many unique 'agencies' are there in this data set</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="115" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">2013-counties.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>2013-counties.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Employee Name" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Job Title" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Base Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Overtime Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Other Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Total Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Total Pay &amp; Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Year" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Notes" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Agency" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="415" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Output" />
+          </Fields>
+          <Data>
+            <r>
+              <c>54</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Output" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="391" y="354" width="108" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Target</Text>
+          <Font name="Microsoft Sans Serif" size="7.8" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="91" y="318" width="287" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Find how many times does each 'Agency' appears in this data set</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="115" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">2013-counties.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>2013-counties.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Employee Name" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Job Title" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Base Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Overtime Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Other Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Total Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Total Pay &amp; Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Year" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Notes" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Agency" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="415" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="54" />
+          <Fields>
+            <Field name="Agency" />
+            <Field name="Output" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Alameda County</c>
+              <c>9680</c>
+            </r>
+            <r>
+              <c>Amador County</c>
+              <c>416</c>
+            </r>
+            <r>
+              <c>Butte County</c>
+              <c>3137</c>
+            </r>
+            <r>
+              <c>Calaveras County</c>
+              <c>477</c>
+            </r>
+            <r>
+              <c>Colusa County</c>
+              <c>436</c>
+            </r>
+            <r>
+              <c>Contra Costa County</c>
+              <c>11489</c>
+            </r>
+            <r>
+              <c>Del Norte County</c>
+              <c>421</c>
+            </r>
+            <r>
+              <c>El Dorado County</c>
+              <c>2214</c>
+            </r>
+            <r>
+              <c>Fresno County</c>
+              <c>7539</c>
+            </r>
+            <r>
+              <c>Glenn County</c>
+              <c>529</c>
+            </r>
+            <r>
+              <c>Humboldt County</c>
+              <c>2281</c>
+            </r>
+            <r>
+              <c>Imperial County</c>
+              <c>2236</c>
+            </r>
+            <r>
+              <c>Inyo County</c>
+              <c>552</c>
+            </r>
+            <r>
+              <c>Kern County</c>
+              <c>10274</c>
+            </r>
+            <r>
+              <c>Kings County</c>
+              <c>1465</c>
+            </r>
+            <r>
+              <c>Lassen County</c>
+              <c>405</c>
+            </r>
+            <r>
+              <c>Los Angeles County</c>
+              <c>99594</c>
+            </r>
+            <r>
+              <c>Madera County</c>
+              <c>1186</c>
+            </r>
+            <r>
+              <c>Marin County</c>
+              <c>2915</c>
+            </r>
+            <r>
+              <c>Mariposa County</c>
+              <c>598</c>
+            </r>
+            <r>
+              <c>Mendocino County</c>
+              <c>1315</c>
+            </r>
+            <r>
+              <c>Merced County</c>
+              <c>2563</c>
+            </r>
+            <r>
+              <c>Mono County</c>
+              <c>341</c>
+            </r>
+            <r>
+              <c>Monterey County</c>
+              <c>5397</c>
+            </r>
+            <r>
+              <c>Napa County</c>
+              <c>1767</c>
+            </r>
+            <r>
+              <c>Nevada County</c>
+              <c>993</c>
+            </r>
+            <r>
+              <c>Orange County</c>
+              <c>18327</c>
+            </r>
+            <r>
+              <c>Placer County</c>
+              <c>3012</c>
+            </r>
+            <r>
+              <c>Plumas County</c>
+              <c>581</c>
+            </r>
+            <r>
+              <c>Riverside County</c>
+              <c>22350</c>
+            </r>
+            <r>
+              <c>Sacramento County</c>
+              <c>12404</c>
+            </r>
+            <r>
+              <c>San Benito County</c>
+              <c>425</c>
+            </r>
+            <r>
+              <c>San Bernardino County</c>
+              <c>22473</c>
+            </r>
+            <r>
+              <c>San Diego County</c>
+              <c>18717</c>
+            </r>
+            <r>
+              <c>San Francisco</c>
+              <c>37606</c>
+            </r>
+            <r>
+              <c>San Joaquin County</c>
+              <c>7046</c>
+            </r>
+            <r>
+              <c>San Luis Obispo County</c>
+              <c>3096</c>
+            </r>
+            <r>
+              <c>San Mateo County</c>
+              <c>8176</c>
+            </r>
+            <r>
+              <c>Santa Barbara County</c>
+              <c>5560</c>
+            </r>
+            <r>
+              <c>Santa Clara County</c>
+              <c>18496</c>
+            </r>
+            <r>
+              <c>Santa Cruz County</c>
+              <c>2704</c>
+            </r>
+            <r>
+              <c>Shasta County</c>
+              <c>1890</c>
+            </r>
+            <r>
+              <c>Sierra County</c>
+              <c>151</c>
+            </r>
+            <r>
+              <c>Siskiyou County</c>
+              <c>805</c>
+            </r>
+            <r>
+              <c>Solano County</c>
+              <c>3082</c>
+            </r>
+            <r>
+              <c>Sonoma County</c>
+              <c>5014</c>
+            </r>
+            <r>
+              <c>Stanislaus County</c>
+              <c>4068</c>
+            </r>
+            <r>
+              <c>Sutter County</c>
+              <c>1115</c>
+            </r>
+            <r>
+              <c>Tehama County</c>
+              <c>985</c>
+            </r>
+            <r>
+              <c>Tulare County</c>
+              <c>4513</c>
+            </r>
+            <r>
+              <c>Tuolumne County</c>
+              <c>875</c>
+            </r>
+            <r>
+              <c>Ventura County</c>
+              <c>9441</c>
+            </r>
+            <r>
+              <c>Yolo County</c>
+              <c>1643</c>
+            </r>
+            <r>
+              <c>Yuba County</c>
+              <c>819</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Agency" size="22" source="TextInput:" type="V_String" />
+            <Field name="Output" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="391" y="522" width="108" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Target</Text>
+          <Font name="Microsoft Sans Serif" size="7.8" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="91" y="486" width="288" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Find what is the mean and median "Total Pay' for this entire data set. (Need to check your data type?!)</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="115" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">2013-counties.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>2013-counties.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Employee Name" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Job Title" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Base Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Overtime Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Other Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Total Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Total Pay &amp; Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Year" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Notes" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Agency" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="415" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Avg_Total Pay" />
+            <Field name="Median_Total Pay" />
+          </Fields>
+          <Data>
+            <r>
+              <c>62049.1557240503</c>
+              <c>54777.165</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Avg_Total Pay" source="TextInput:" type="Double" />
+            <Field name="Median_Total Pay" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="391" y="702" width="108" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Target</Text>
+          <Font name="Microsoft Sans Serif" size="7.8" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="91" y="666" width="288" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Find what is the mean and median "Total Pay' for each 'Agency'. (Need to check your data type?!)</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="115" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">2013-counties.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>2013-counties.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Employee Name" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Job Title" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Base Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Overtime Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Other Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Total Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Total Pay &amp; Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Year" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Notes" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Agency" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="415" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="54" />
+          <Fields>
+            <Field name="Agency" />
+            <Field name="Avg_Total Pay" />
+            <Field name="Median_Total Pay" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Alameda County</c>
+              <c>69056.9972334715</c>
+              <c>61967.48</c>
+            </r>
+            <r>
+              <c>Amador County</c>
+              <c>57505.8668028846</c>
+              <c>55819.5</c>
+            </r>
+            <r>
+              <c>Butte County</c>
+              <c>36511.3860376156</c>
+              <c>34745</c>
+            </r>
+            <r>
+              <c>Calaveras County</c>
+              <c>45889.0754507337</c>
+              <c>46665.35</c>
+            </r>
+            <r>
+              <c>Colusa County</c>
+              <c>49814.2376605505</c>
+              <c>50979.99</c>
+            </r>
+            <r>
+              <c>Contra Costa County</c>
+              <c>56535.5303725302</c>
+              <c>50134.5</c>
+            </r>
+            <r>
+              <c>Del Norte County</c>
+              <c>37530.3030403801</c>
+              <c>36831</c>
+            </r>
+            <r>
+              <c>El Dorado County</c>
+              <c>47326.6449096658</c>
+              <c>43400.995</c>
+            </r>
+            <r>
+              <c>Fresno County</c>
+              <c>46906.7695410528</c>
+              <c>44590</c>
+            </r>
+            <r>
+              <c>Glenn County</c>
+              <c>40498.4256710776</c>
+              <c>39561.6</c>
+            </r>
+            <r>
+              <c>Humboldt County</c>
+              <c>45637.4306269181</c>
+              <c>43279.04</c>
+            </r>
+            <r>
+              <c>Imperial County</c>
+              <c>44802.1984704832</c>
+              <c>40776.46</c>
+            </r>
+            <r>
+              <c>Inyo County</c>
+              <c>45948.3405797101</c>
+              <c>48147.5</c>
+            </r>
+            <r>
+              <c>Kern County</c>
+              <c>56814.09626241</c>
+              <c>48337.5</c>
+            </r>
+            <r>
+              <c>Kings County</c>
+              <c>43687.4689419795</c>
+              <c>41496</c>
+            </r>
+            <r>
+              <c>Lassen County</c>
+              <c>43612.8</c>
+              <c>41562</c>
+            </r>
+            <r>
+              <c>Los Angeles County</c>
+              <c>68019.8338554531</c>
+              <c>58375</c>
+            </r>
+            <r>
+              <c>Madera County</c>
+              <c>45277.2340387859</c>
+              <c>42928.175</c>
+            </r>
+            <r>
+              <c>Marin County</c>
+              <c>63889.2674579758</c>
+              <c>63634.75</c>
+            </r>
+            <r>
+              <c>Mariposa County</c>
+              <c>33228.4448160536</c>
+              <c>33410.28</c>
+            </r>
+            <r>
+              <c>Mendocino County</c>
+              <c>42912.3843422053</c>
+              <c>41277.55</c>
+            </r>
+            <r>
+              <c>Merced County</c>
+              <c>44038.7978774873</c>
+              <c>45132</c>
+            </r>
+            <r>
+              <c>Mono County</c>
+              <c>55366.9673607038</c>
+              <c>51215.64</c>
+            </r>
+            <r>
+              <c>Monterey County</c>
+              <c>59693.8082786733</c>
+              <c>51578.9</c>
+            </r>
+            <r>
+              <c>Napa County</c>
+              <c>58598.4166666667</c>
+              <c>57219.25</c>
+            </r>
+            <r>
+              <c>Nevada County</c>
+              <c>47958.8625679757</c>
+              <c>46355.8</c>
+            </r>
+            <r>
+              <c>Orange County</c>
+              <c>65603.8462039606</c>
+              <c>60182.59</c>
+            </r>
+            <r>
+              <c>Placer County</c>
+              <c>60155.0974269589</c>
+              <c>57736.745</c>
+            </r>
+            <r>
+              <c>Plumas County</c>
+              <c>43435.0244061962</c>
+              <c>33152.69</c>
+            </r>
+            <r>
+              <c>Riverside County</c>
+              <c>55929.5003293064</c>
+              <c>47421.525</c>
+            </r>
+            <r>
+              <c>Sacramento County</c>
+              <c>67308.6621581756</c>
+              <c>62986.645</c>
+            </r>
+            <r>
+              <c>San Benito County</c>
+              <c>50454.4136705882</c>
+              <c>45885.01</c>
+            </r>
+            <r>
+              <c>San Bernardino County</c>
+              <c>47996.6210612734</c>
+              <c>42204.04</c>
+            </r>
+            <r>
+              <c>San Diego County</c>
+              <c>55387.2992525507</c>
+              <c>52308.17</c>
+            </r>
+            <r>
+              <c>San Francisco</c>
+              <c>77611.443142054</c>
+              <c>74500.015</c>
+            </r>
+            <r>
+              <c>San Joaquin County</c>
+              <c>55959.167062163</c>
+              <c>46789.6</c>
+            </r>
+            <r>
+              <c>San Luis Obispo County</c>
+              <c>56310.5967861755</c>
+              <c>54549.65</c>
+            </r>
+            <r>
+              <c>San Mateo County</c>
+              <c>54402.4943321919</c>
+              <c>51770.315</c>
+            </r>
+            <r>
+              <c>Santa Barbara County</c>
+              <c>54990.2414604317</c>
+              <c>53414.36</c>
+            </r>
+            <r>
+              <c>Santa Clara County</c>
+              <c>73486.6590441182</c>
+              <c>63323.465</c>
+            </r>
+            <r>
+              <c>Santa Cruz County</c>
+              <c>58780.0742344675</c>
+              <c>58534.92</c>
+            </r>
+            <r>
+              <c>Shasta County</c>
+              <c>45381.0201640211</c>
+              <c>41339.18</c>
+            </r>
+            <r>
+              <c>Sierra County</c>
+              <c>32780.7425165563</c>
+              <c>36306.41</c>
+            </r>
+            <r>
+              <c>Siskiyou County</c>
+              <c>37609.428</c>
+              <c>37708.71</c>
+            </r>
+            <r>
+              <c>Solano County</c>
+              <c>60775.1130564569</c>
+              <c>58214.655</c>
+            </r>
+            <r>
+              <c>Sonoma County</c>
+              <c>64442.783815317</c>
+              <c>64326.215</c>
+            </r>
+            <r>
+              <c>Stanislaus County</c>
+              <c>48410.8178318586</c>
+              <c>44750.63</c>
+            </r>
+            <r>
+              <c>Sutter County</c>
+              <c>49925.0160717489</c>
+              <c>48179.11</c>
+            </r>
+            <r>
+              <c>Tehama County</c>
+              <c>39662.2007309645</c>
+              <c>37321.01</c>
+            </r>
+            <r>
+              <c>Tulare County</c>
+              <c>57744.1799822732</c>
+              <c>52529.02</c>
+            </r>
+            <r>
+              <c>Tuolumne County</c>
+              <c>40808.502982857</c>
+              <c>34883.75</c>
+            </r>
+            <r>
+              <c>Ventura County</c>
+              <c>63232.0251774177</c>
+              <c>54586.21</c>
+            </r>
+            <r>
+              <c>Yolo County</c>
+              <c>55491.8947048083</c>
+              <c>53635</c>
+            </r>
+            <r>
+              <c>Yuba County</c>
+              <c>55472.4002442002</c>
+              <c>53487.86</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Agency" size="22" source="TextInput:" type="V_String" />
+            <Field name="Avg_Total Pay" source="TextInput:" type="Double" />
+            <Field name="Median_Total Pay" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="91" y="834" width="288" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Count the number of times each job title appears in each Agency</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="127" y="894" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">2013-counties.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>2013-counties.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Employee Name" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Job Title" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Base Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Overtime Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Other Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Total Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Total Pay &amp; Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Year" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Notes" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+            <Field name="Agency" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="91" y="66" width="324" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Summarize Tool Examples</Text>
+          <Font name="Times New Roman" size="18" style="0" />
+          <TextColor r="13" g="35" b="69" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="582" y="54" width="180" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Click the triangle on the right to see the solutions.</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="White" />
+          <FillColor r="0" g="130" b="202" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="90" y="102" width="408" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Use the Summarize tool to achieve the target output.</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="White" />
+          <FillColor r="0" g="130" b="202" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="1042" width="674" height="105" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Alteryx Educational Asset - Terms and Conditions</Caption>
+          <Style TextColor="#ffffff" FillColor="#0d2345" BorderColor="#314c4a" Transparency="1" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="79" y="1086" width="624" height="36" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Use of this Alteryx asset is for educational purposes only and bound by the conditions set forth on alteryx.com/terms-and-conditions. Alteryx Information may not be reproduced, transmitted or distributed without Alteryx, Inc.'s permission.</Text>
+              <Font name="Times New Roman" size="8.25" style="0" />
+              <TextColor name="White" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="606" y="102.0001" width="118.4059" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Solutions</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="631" y="151.0001" width="287" height="156" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Find how many unique 'agencies' are there in this data set</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="655" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">2013-counties.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>2013-counties.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Employee Name" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Job Title" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Base Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Overtime Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Other Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Total Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Total Pay &amp; Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Year" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Notes" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Agency" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="631" y="319" width="287" height="156" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Find how many times does each 'Agency' appears in this data set</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="655" y="367" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">2013-counties.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>2013-counties.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Employee Name" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Job Title" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Base Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Overtime Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Other Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Total Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Total Pay &amp; Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Year" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Notes" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Agency" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="631" y="487" width="288" height="156" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Find what is the mean and median "Total Pay' for this entire data set. (Need to check your data type?!)</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="655" y="535" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">2013-counties.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>2013-counties.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Employee Name" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Job Title" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Base Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Overtime Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Other Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Total Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Total Pay &amp; Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Year" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Notes" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Agency" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="631" y="667" width="288" height="156" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Find what is the mean and median "Total Pay' for each 'Agency'. (Need to check your data type?!)</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="655.0001" y="715" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">2013-counties.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>2013-counties.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Employee Name" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Job Title" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Base Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Overtime Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Other Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Total Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Total Pay &amp; Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Year" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Notes" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Agency" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="631" y="835" width="288" height="156" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Count the number of times each job title appears in each Agency</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="667" y="895" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">2013-counties.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>2013-counties.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Employee Name" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Job Title" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Base Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Overtime Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Other Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Total Pay" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Total Pay &amp; Benefits" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Year" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Notes" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Agency" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="763" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Agency" action="CountDistinct" rename="Output" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Output" source="Summarize: CountDistinct - Agency" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="763" y="367" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Agency" action="GroupBy" rename="Agency" />
+                <SummarizeField field="Agency" action="Count" rename="Output" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Agency" size="254" source="Summarize: GroupBy - Agency" type="V_String" />
+                <Field name="Output" source="Summarize: Count - Agency" type="Int64" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Agency" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="847" y="535" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Total Pay" action="Avg" rename="Avg_Total Pay" />
+                <SummarizeField field="Total Pay" action="Median" rename="Median_Total Pay" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Avg_Total Pay" source="Summarize: Avg - Total Pay" type="Double" />
+                <Field name="Median_Total Pay" source="Summarize: Median - Total Pay" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="751.0001" y="535" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Base Pay" selected="True" type="Double" size="8" />
+                <SelectField field="Overtime Pay" selected="True" type="Double" size="8" />
+                <SelectField field="Other Pay" selected="True" type="Double" size="8" />
+                <SelectField field="Benefits" selected="True" type="Double" size="8" />
+                <SelectField field="Total Pay" selected="True" type="Double" size="8" />
+                <SelectField field="Total Pay &amp; Benefits" selected="True" type="Double" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Employee Name" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Job Title" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Base Pay" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="Double" />
+                <Field name="Overtime Pay" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="Double" />
+                <Field name="Other Pay" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="Double" />
+                <Field name="Benefits" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="Double" />
+                <Field name="Total Pay" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="Double" />
+                <Field name="Total Pay &amp; Benefits" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="Double" />
+                <Field name="Year" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Notes" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Agency" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="751" y="715" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Base Pay" selected="True" type="Double" size="8" />
+                <SelectField field="Overtime Pay" selected="True" type="Double" size="8" />
+                <SelectField field="Other Pay" selected="True" type="Double" size="8" />
+                <SelectField field="Benefits" selected="True" type="Double" size="8" />
+                <SelectField field="Total Pay" selected="True" type="Double" size="8" />
+                <SelectField field="Total Pay &amp; Benefits" selected="True" type="Double" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Employee Name" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Job Title" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Base Pay" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="Double" />
+                <Field name="Overtime Pay" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="Double" />
+                <Field name="Other Pay" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="Double" />
+                <Field name="Benefits" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="Double" />
+                <Field name="Total Pay" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="Double" />
+                <Field name="Total Pay &amp; Benefits" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="Double" />
+                <Field name="Year" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Notes" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+                <Field name="Agency" size="254" source="File: C:\Users\iwiggins\Desktop\Prescriptive take 3\Prescriptive Try It\2013-counties.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="846.9999" y="715" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Agency" action="GroupBy" rename="Agency" />
+                <SummarizeField field="Total Pay" action="Avg" rename="Avg_Total Pay" />
+                <SummarizeField field="Total Pay" action="Median" rename="Median_Total Pay" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Agency" size="254" source="Summarize: GroupBy - Agency" type="V_String" />
+                <Field name="Avg_Total Pay" source="Summarize: Avg - Total Pay" type="Double" />
+                <Field name="Median_Total Pay" source="Summarize: Median - Total Pay" type="Double" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Agency" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="799.0001" y="894.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Agency" action="GroupBy" rename="Agency" />
+                <SummarizeField field="Job Title" action="GroupBy" rename="Job Title" />
+                <SummarizeField field="Job Title" action="Count" rename="Count" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Agency" size="254" source="Summarize: GroupBy - Agency" type="V_String" />
+                <Field name="Job Title" size="254" source="Summarize: GroupBy - Job Title" type="V_String" />
+                <Field name="Count" source="Summarize: Count - Job Title" type="Int64" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Agency" order="Asc" />
+                <Field field="Job Title" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="-1" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>summarize_try_it</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,19 @@
+<YXFT>
+  <fields>
+    <field name="ID" type="Int32" size="4" description="" />
+    <field name="FirstName" type="V_String" size="100" description="" />
+    <field name="LastName" type="V_String" size="100" description="" />
+    <field name="Address" type="V_String" size="256" description="" />
+    <field name="City" type="String" size="256" description="" />
+    <field name="State" type="String" size="256" description="" />
+    <field name="ZIP" type="String" size="11" description="" />
+    <field name="Zip4" type="String" size="4" description="" />
+    <field name="StoreNumber" type="Byte" size="1" description="" />
+    <field name="CustomerSegment" type="String" size="14" description="" />
+    <field name="Visits" type="String" size="3" description="" />
+    <field name="Spend" type="Double" size="8" description="" />
+    <field name="SpatialObj" type="SpatialObj" size="536870911" description="" />
+    <field name="Latitude" type="Double" size="8" description="" />
+    <field name="Longitude" type="Double" size="8" description="" />
+  </fields>
+</YXFT>

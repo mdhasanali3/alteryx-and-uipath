@@ -1,0 +1,934 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AlteryxDocument yxmdVer="2018.1">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="55" y="150" width="252" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Select the first 3 presidents</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="79" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">_externals\1\USPresidents.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>USPresidents.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Index" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+            <Field name="Name" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+            <Field name="Party" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+            <Field name="From" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+            <Field name="To" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="367" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="3" />
+          <Fields>
+            <Field name="Index" />
+            <Field name="Name" />
+            <Field name="Party" />
+            <Field name="From" />
+            <Field name="To" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+              <c>George Washington</c>
+              <c>No party</c>
+              <c>1789-04-30</c>
+              <c>1797-03-04</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>John Adams</c>
+              <c>Federalist</c>
+              <c>1797-03-04</c>
+              <c>1801-03-04</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>Thomas Jefferson</c>
+              <c>Democratic-Republican</c>
+              <c>1801-03-04</c>
+              <c>1809-03-04</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Index" source="TextInput:" type="Byte" />
+            <Field name="Name" size="17" source="TextInput:" type="String" />
+            <Field name="Party" size="21" source="TextInput:" type="V_String" />
+            <Field name="From" source="TextInput:" type="Date" />
+            <Field name="To" source="TextInput:" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="55" y="330" width="252" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Select the last 5 presidents</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="79" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">_externals\1\USPresidents.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>USPresidents.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Index" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+            <Field name="Name" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+            <Field name="Party" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+            <Field name="From" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+            <Field name="To" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="343" y="186" width="108" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Target</Text>
+          <Font name="Microsoft Sans Serif" size="7.8" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="343" y="366" width="108" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Target</Text>
+          <Font name="Microsoft Sans Serif" size="7.8" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="367" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="5" />
+          <Fields>
+            <Field name="Index" />
+            <Field name="Name" />
+            <Field name="Party" />
+            <Field name="From" />
+            <Field name="To" />
+          </Fields>
+          <Data>
+            <r>
+              <c>40</c>
+              <c>Ronald Reagan</c>
+              <c>Republican</c>
+              <c>1981-01-20</c>
+              <c>1989-01-20</c>
+            </r>
+            <r>
+              <c>41</c>
+              <c>George H. W. Bush</c>
+              <c>Republican</c>
+              <c>1989-01-20</c>
+              <c>1993-01-20</c>
+            </r>
+            <r>
+              <c>42</c>
+              <c>Bill Clinton</c>
+              <c>Democratic</c>
+              <c>1993-01-20</c>
+              <c>2001-01-20</c>
+            </r>
+            <r>
+              <c>43</c>
+              <c>George W. Bush</c>
+              <c>Republican</c>
+              <c>2001-01-20</c>
+              <c>2009-01-20</c>
+            </r>
+            <r>
+              <c>44</c>
+              <c>Barack Obama</c>
+              <c>Democratic</c>
+              <c>2009-01-20</c>
+              <c>2017-01-20</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Index" source="TextInput:" type="Byte" />
+            <Field name="Name" size="17" source="TextInput:" type="String" />
+            <Field name="Party" size="10" source="TextInput:" type="String" />
+            <Field name="From" source="TextInput:" type="Date" />
+            <Field name="To" source="TextInput:" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="55" y="522" width="252" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Select the first 3 presidents of each party</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="79" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">_externals\1\USPresidents.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>USPresidents.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Index" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+            <Field name="Name" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+            <Field name="Party" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+            <Field name="From" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+            <Field name="To" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="343" y="558" width="108" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Target</Text>
+          <Font name="Microsoft Sans Serif" size="7.8" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="367" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="14" />
+          <Fields>
+            <Field name="Index" />
+            <Field name="Name" />
+            <Field name="Party" />
+            <Field name="From" />
+            <Field name="To" />
+          </Fields>
+          <Data>
+            <r>
+              <c>7</c>
+              <c>Andrew Jackson</c>
+              <c>Democratic</c>
+              <c>1829-03-04</c>
+              <c>1837-03-04</c>
+            </r>
+            <r>
+              <c>8</c>
+              <c>Martin Van Buren</c>
+              <c>Democratic</c>
+              <c>1837-03-04</c>
+              <c>1841-03-04</c>
+            </r>
+            <r>
+              <c>11</c>
+              <c>James K. Polk</c>
+              <c>Democratic</c>
+              <c>1845-03-04</c>
+              <c>1849-03-04</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>Thomas Jefferson</c>
+              <c>Democratic-Republican</c>
+              <c>1801-03-04</c>
+              <c>1809-03-04</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>James Madison</c>
+              <c>Democratic-Republican</c>
+              <c>1809-03-04</c>
+              <c>1817-03-04</c>
+            </r>
+            <r>
+              <c>5</c>
+              <c>James Monroe</c>
+              <c>Democratic-Republican</c>
+              <c>1817-03-04</c>
+              <c>1825-03-04</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>John Adams</c>
+              <c>Federalist</c>
+              <c>1797-03-04</c>
+              <c>1801-03-04</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>George Washington</c>
+              <c>No party</c>
+              <c>1789-04-30</c>
+              <c>1797-03-04</c>
+            </r>
+            <r>
+              <c>16</c>
+              <c>Abraham Lincoln</c>
+              <c>Republican</c>
+              <c>1861-03-04</c>
+              <c>1865-04-15</c>
+            </r>
+            <r>
+              <c>18</c>
+              <c>Ulysses S. Grant</c>
+              <c>Republican</c>
+              <c>1869-03-04</c>
+              <c>1877-03-04</c>
+            </r>
+            <r>
+              <c>19</c>
+              <c>Rutherford B. Hayes</c>
+              <c>Republican</c>
+              <c>1877-03-04</c>
+              <c>1881-03-04</c>
+            </r>
+            <r>
+              <c>9</c>
+              <c>William H. Harrison</c>
+              <c>Whig</c>
+              <c>1841-03-04</c>
+              <c>1841-04-04</c>
+            </r>
+            <r>
+              <c>10</c>
+              <c>John Tyler</c>
+              <c>Whig</c>
+              <c>1841-04-04</c>
+              <c>1845-03-04</c>
+            </r>
+            <r>
+              <c>12</c>
+              <c>Zachary Taylor</c>
+              <c>Whig</c>
+              <c>1849-03-04</c>
+              <c>1850-07-09</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Index" source="TextInput:" type="Byte" />
+            <Field name="Name" size="19" source="TextInput:" type="String" />
+            <Field name="Party" size="21" source="TextInput:" type="V_String" />
+            <Field name="From" source="TextInput:" type="Date" />
+            <Field name="To" source="TextInput:" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="367" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="3" />
+          <Fields>
+            <Field name="Index" />
+            <Field name="Name" />
+            <Field name="Party" />
+            <Field name="From" />
+            <Field name="To" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+              <c>George Washington</c>
+              <c>No party</c>
+              <c>1789-04-30</c>
+              <c>1797-03-04</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>John Adams</c>
+              <c>Federalist</c>
+              <c>1797-03-04</c>
+              <c>1801-03-04</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>Thomas Jefferson</c>
+              <c>Democratic-Republican</c>
+              <c>1801-03-04</c>
+              <c>1809-03-04</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Index" source="TextInput:" type="Byte" />
+            <Field name="Name" size="17" source="TextInput:" type="String" />
+            <Field name="Party" size="21" source="TextInput:" type="V_String" />
+            <Field name="From" source="TextInput:" type="Date" />
+            <Field name="To" source="TextInput:" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="55" y="66" width="324" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Sample Tool Examples</Text>
+          <Font name="Times New Roman" size="18" style="0" />
+          <TextColor r="13" g="35" b="69" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="546" y="54" width="180" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Click the triangle on the right to see the solutions.</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="White" />
+          <FillColor r="0" g="130" b="202" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="102" width="348" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Use the Sample tool to achieve the target output.</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="White" />
+          <FillColor r="0" g="130" b="202" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="570" y="102" width="118.4059" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Solutions</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="595" y="151" width="252" height="156" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Select the first 3 presidents</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="619" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">_externals\1\USPresidents.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>USPresidents.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Index" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="Name" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="Party" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="From" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="To" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="739" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>First</Mode>
+              <N>3</N>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 3</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Index" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="Name" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="Party" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="From" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="To" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="595" y="331" width="252" height="156" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Select the last 5 presidents</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="619" y="379" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">_externals\1\USPresidents.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>USPresidents.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Index" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="Name" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="Party" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="From" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="To" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="739" y="379" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Last</Mode>
+              <N>5</N>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Last 5</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Index" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="Name" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="Party" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="From" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="To" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="595" y="523" width="252" height="156" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Select the first 3 presidents of each party</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="619" y="571" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">_externals\1\USPresidents.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>USPresidents.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Index" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="Name" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="Party" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="From" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="To" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="739" y="571" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>First</Mode>
+              <N>3</N>
+              <GroupFields orderChanged="False">
+                <Field name="Party" />
+              </GroupFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 3</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Index" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="Name" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="Party" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="From" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+                <Field name="To" size="254" source="File: W:\Products\AlteryxSource\RuntimeData\Samples\SampleData\USPresidents.csv" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Party" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="742" width="674" height="105" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Alteryx Educational Asset - Terms and Conditions</Caption>
+          <Style TextColor="#ffffff" FillColor="#0d2345" BorderColor="#314c4a" Transparency="1" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="79" y="786" width="624" height="36" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Use of this Alteryx asset is for educational purposes only and bound by the conditions set forth on alteryx.com/terms-and-conditions. Alteryx Information may not be reproduced, transmitted or distributed without Alteryx, Inc.'s permission.</Text>
+              <Font name="Times New Roman" size="8.25" style="0" />
+              <TextColor name="White" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="-1" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>sample_try_it</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
